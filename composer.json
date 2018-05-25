@@ -1,0 +1,40 @@
+{
+    "name": "cryonighter/facebook-messenger-api-send",
+    "description": "",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "type": "library",
+    "version": "0.1.0",
+    "keywords": [
+        "facebook",
+        "send api"
+    ],
+    "authors": [
+        {
+            "name": "Andrey Reshetchenko",
+            "email": "cryonighter@yandex.ru"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "ext-json": "*",
+        "ext-pcre": "*",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cryonighter\\Facebook\\Messenger\\Send\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Test\\Cryonighter\\Facebook\\Messenger\\Send\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
