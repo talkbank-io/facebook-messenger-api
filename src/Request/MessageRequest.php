@@ -3,7 +3,7 @@
 namespace Cryonighter\Facebook\Messenger\Send\Request;
 
 use Cryonighter\Facebook\Messenger\Send\VO\Message\Message;
-use Cryonighter\Facebook\Messenger\Send\VO\MessageTag;
+use Cryonighter\Facebook\Messenger\Send\VO\Tag;
 use Cryonighter\Facebook\Messenger\Send\VO\NotificationType;
 use Cryonighter\Facebook\Messenger\Send\VO\Recipient\Recipient;
 use Cryonighter\Facebook\Messenger\Send\VO\MessagingType;
@@ -31,23 +31,23 @@ class MessageRequest extends Request
     private $notificationType;
 
     /**
-     * @var MessageTag | null
+     * @var Tag | null
      */
     private $tag;
 
     /**
-     * @param Recipient         $recipient
-     * @param Message           $message
-     * @param MessagingType     $messagingType
-     * @param NotificationType  $notificationType
-     * @param MessageTag | null $tag
+     * @param Recipient        $recipient
+     * @param Message          $message
+     * @param MessagingType    $messagingType
+     * @param NotificationType $notificationType
+     * @param Tag | null       $tag
      */
     public function __construct(
         Recipient $recipient,
         Message $message,
         MessagingType $messagingType,
         NotificationType $notificationType,
-        MessageTag $tag = null
+        Tag $tag = null
     ) {
         $this->recipient = $recipient;
         $this->message = $message;

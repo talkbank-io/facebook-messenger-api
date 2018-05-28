@@ -9,7 +9,7 @@ use JsonSerializable;
  *
  * @see https://developers.facebook.com/docs/messenger-platform/send-messages/message-tags
  */
-class MessageTag implements JsonSerializable
+class Tag implements JsonSerializable
 {
     use OneValueTrait;
 }
