@@ -19,13 +19,27 @@ class ButtonTemplate extends Template
     private $buttons;
 
     /**
+     * @var bool
+     */
+    private $sharable;
+
+    /**
      * @param string           $text
-     * @param array | Button[] ...$buttons
+     * @param array | Button[] $buttons
+     * @param bool             $sharable
      *
      * @throws ValueException
      */
-    public function __construct(string $text, Button ...$buttons)
+    public function __construct(string $text, array $buttons, bool $sharable = false)
     {
+        if (empty($text)) {
+            throw new ValueException('Text message can not be empty');
+        }
+
+        if (!preg_match('/^.{1,640}$/u', $text)) {
+            throw new ValueException('Text message can not exceed 640 characters');
+        }
+
         if (empty($buttons)) {
             throw new ValueException('List of buttons can not be empty');
         }
@@ -36,6 +50,7 @@ class ButtonTemplate extends Template
 
         $this->text = $text;
         $this->buttons = $buttons;
+        $this->sharable = $sharable;
 
         parent::__construct(new TemplateType(TemplateType::TYPE_BUTTON));
     }
