@@ -2,7 +2,7 @@
 
 namespace Cryonighter\Facebook\Messenger\Send\VO\Button;
 
-use Cryonighter\Facebook\Messenger\Send\VO\ButtonType;
+use Cryonighter\Facebook\Messenger\Send\VO\Type\ButtonType;
 use JsonSerializable;
 
 abstract class Button implements JsonSerializable

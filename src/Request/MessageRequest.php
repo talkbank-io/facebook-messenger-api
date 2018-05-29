@@ -4,7 +4,7 @@ namespace Cryonighter\Facebook\Messenger\Send\Request;
 
 use Cryonighter\Facebook\Messenger\Send\VO\Message\Message;
 use Cryonighter\Facebook\Messenger\Send\VO\Tag;
-use Cryonighter\Facebook\Messenger\Send\VO\NotificationType;
+use Cryonighter\Facebook\Messenger\Send\VO\Type\NotificationType;
 use Cryonighter\Facebook\Messenger\Send\VO\Recipient\Recipient;
 use Cryonighter\Facebook\Messenger\Send\VO\MessagingType;
 

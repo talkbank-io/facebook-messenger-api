@@ -38,13 +38,14 @@ class FacebookSendApiClient
 
     /**
      * @param string $pageAccessToken
+     * @param float  $timeout
      */
-    public function __construct(string $pageAccessToken)
+    public function __construct(string $pageAccessToken, float $timeout)
     {
         $this->httpClient = new Client(
             [
                 'base_uri' => 'https://graph.facebook.com',
-                'timeout' => 5.5,
+                'timeout' => $timeout,
             ]
         );
         $this->pageAccessToken = $pageAccessToken;
@@ -87,6 +88,13 @@ class FacebookSendApiClient
         );
     }
 
+    /**
+     * @param SenderActionRequest $senderActionRequest
+     *
+     * @return RecipientResponse
+     *
+     * @throws FacebookErrorException
+     */
     public function sendSenderAction(SenderActionRequest $senderActionRequest): RecipientResponse
     {
         return new RecipientResponse(

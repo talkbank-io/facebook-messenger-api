@@ -2,7 +2,7 @@
 
 namespace Cryonighter\Facebook\Messenger\Send\VO\Payload;
 
-use Cryonighter\Facebook\Messenger\Send\VO\TemplateType;
+use Cryonighter\Facebook\Messenger\Send\VO\Type\TemplateType;
 use JsonSerializable;
 
 abstract class Template implements Payload, JsonSerializable
