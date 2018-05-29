@@ -1,8 +1,8 @@
 <?php
 
-namespace Cryonighter\Facebook\Messenger\Send\VO\Payload;
+namespace Cryonighter\Facebook\Messenger\VO\Payload;
 
-use Cryonighter\Facebook\Messenger\Send\VO\AttachmentId;
+use Cryonighter\Facebook\Messenger\VO\AttachmentId;
 use JsonSerializable;
 
 class AttachmentIdData implements Payload, JsonSerializable

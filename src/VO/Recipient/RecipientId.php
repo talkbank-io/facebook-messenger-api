@@ -1,8 +1,8 @@
 <?php
 
-namespace Cryonighter\Facebook\Messenger\Send\VO\Recipient;
+namespace Cryonighter\Facebook\Messenger\VO\Recipient;
 
-use Cryonighter\Facebook\Messenger\Send\Exception\ValueException;
+use Cryonighter\Facebook\Messenger\Exception\ValueException;
 
 class RecipientId extends Recipient
 {

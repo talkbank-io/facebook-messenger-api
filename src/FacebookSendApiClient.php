@@ -1,19 +1,19 @@
 <?php
 
-namespace Cryonighter\Facebook\Messenger\Send;
+namespace Cryonighter\Facebook\Messenger;
 
-use Cryonighter\Facebook\Messenger\Send\Exception\FacebookError\FacebookErrorException;
-use Cryonighter\Facebook\Messenger\Send\Request\AttachmentRequest;
-use Cryonighter\Facebook\Messenger\Send\Request\MessageRequest;
-use Cryonighter\Facebook\Messenger\Send\Request\Request;
-use Cryonighter\Facebook\Messenger\Send\Request\SenderActionRequest;
-use Cryonighter\Facebook\Messenger\Send\Response\AttachmentResponse;
-use Cryonighter\Facebook\Messenger\Send\Response\RecipientMessageResponse;
-use Cryonighter\Facebook\Messenger\Send\Response\MessageResponse;
-use Cryonighter\Facebook\Messenger\Send\Response\RecipientResponse;
-use Cryonighter\Facebook\Messenger\Send\VO\AttachmentId;
-use Cryonighter\Facebook\Messenger\Send\VO\MessageId;
-use Cryonighter\Facebook\Messenger\Send\VO\Recipient\RecipientId;
+use Cryonighter\Facebook\Messenger\Exception\FacebookError\FacebookErrorException;
+use Cryonighter\Facebook\Messenger\Request\AttachmentRequest;
+use Cryonighter\Facebook\Messenger\Request\MessageRequest;
+use Cryonighter\Facebook\Messenger\Request\Request;
+use Cryonighter\Facebook\Messenger\Request\SenderActionRequest;
+use Cryonighter\Facebook\Messenger\Response\AttachmentResponse;
+use Cryonighter\Facebook\Messenger\Response\RecipientMessageResponse;
+use Cryonighter\Facebook\Messenger\Response\MessageResponse;
+use Cryonighter\Facebook\Messenger\Response\RecipientResponse;
+use Cryonighter\Facebook\Messenger\VO\AttachmentId;
+use Cryonighter\Facebook\Messenger\VO\MessageId;
+use Cryonighter\Facebook\Messenger\VO\Recipient\RecipientId;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
 use function \GuzzleHttp\json_decode;
@@ -112,6 +112,10 @@ class FacebookSendApiClient
     protected function request(Request $request): array
     {
         $method = static::METHODS[get_class($request)];
+
+        // TODO: убрать отладочное говно
+        var_dump(json_encode($request, 256 | 128));
+        echo "\n";
 
         try {
             $response = $this->httpClient->post(

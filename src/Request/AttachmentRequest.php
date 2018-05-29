@@ -1,8 +1,8 @@
 <?php
 
-namespace Cryonighter\Facebook\Messenger\Send\Request;
+namespace Cryonighter\Facebook\Messenger\Request;
 
-use Cryonighter\Facebook\Messenger\Send\VO\Message\AttachmentMessage;
+use Cryonighter\Facebook\Messenger\VO\Message\AttachmentMessage;
 
 class AttachmentRequest extends Request
 {

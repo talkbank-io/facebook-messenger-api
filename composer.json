@@ -1,5 +1,5 @@
 {
-    "name": "cryonighter/facebook-messenger-api-send",
+    "name": "cryonighter/facebook-messenger-api",
     "description": "",
     "minimum-stability": "stable",
     "license": "MIT",
@@ -26,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Cryonighter\\Facebook\\Messenger\\Send\\": "src/"
+            "Cryonighter\\Facebook\\Messenger\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Test\\Cryonighter\\Facebook\\Messenger\\Send\\": "tests/"
+            "Test\\Cryonighter\\Facebook\\Messenger\\": "tests/"
         }
     },
     "config": {

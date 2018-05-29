@@ -1,8 +1,8 @@
 <?php
 
-namespace Cryonighter\Facebook\Messenger\Send\VO\Payload;
+namespace Cryonighter\Facebook\Messenger\VO\Payload;
 
-use Cryonighter\Facebook\Messenger\Send\VO\Type\TemplateType;
+use Cryonighter\Facebook\Messenger\VO\Type\TemplateType;
 use JsonSerializable;
 
 abstract class Template implements Payload, JsonSerializable
@@ -15,7 +15,7 @@ abstract class Template implements Payload, JsonSerializable
     /**
      * @param TemplateType $templateType
      */
-    public function __construct(TemplateType $templateType)
+    protected function __construct(TemplateType $templateType)
     {
         $this->templateType = $templateType;
     }

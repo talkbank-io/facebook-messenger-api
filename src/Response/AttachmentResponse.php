@@ -1,8 +1,8 @@
 <?php
 
-namespace Cryonighter\Facebook\Messenger\Send\Response;
+namespace Cryonighter\Facebook\Messenger\Response;
 
-use Cryonighter\Facebook\Messenger\Send\VO\AttachmentId;
+use Cryonighter\Facebook\Messenger\VO\AttachmentId;
 
 class AttachmentResponse
 {

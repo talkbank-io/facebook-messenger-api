@@ -1,9 +1,9 @@
 <?php
 
-namespace Cryonighter\Facebook\Messenger\Send\VO\Attachment;
+namespace Cryonighter\Facebook\Messenger\VO\Attachment;
 
-use Cryonighter\Facebook\Messenger\Send\VO\AttachmentType;
-use Cryonighter\Facebook\Messenger\Send\VO\Payload\AttachmentUrlData;
+use Cryonighter\Facebook\Messenger\VO\Payload\AttachmentUrlData;
+use Cryonighter\Facebook\Messenger\VO\Type\AttachmentType;
 
 class ImageAttachment extends Attachment
 {

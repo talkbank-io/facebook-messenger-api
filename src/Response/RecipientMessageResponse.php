@@ -1,9 +1,9 @@
 <?php
 
-namespace Cryonighter\Facebook\Messenger\Send\Response;
+namespace Cryonighter\Facebook\Messenger\Response;
 
-use Cryonighter\Facebook\Messenger\Send\VO\Recipient\RecipientId;
-use Cryonighter\Facebook\Messenger\Send\VO\MessageId;
+use Cryonighter\Facebook\Messenger\VO\Recipient\RecipientId;
+use Cryonighter\Facebook\Messenger\VO\MessageId;
 
 class RecipientMessageResponse extends MessageResponse
 {

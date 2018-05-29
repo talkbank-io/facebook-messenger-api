@@ -1,11 +1,13 @@
 <?php
 
-namespace Cryonighter\Facebook\Messenger\Send\VO\QuickReply;
+namespace Cryonighter\Facebook\Messenger\VO\QuickReply;
+
+use Cryonighter\Facebook\Messenger\VO\Type\QuickReplyType;
 
 class LocationQuickReply extends QuickReply
 {
-    /**
-     * @var string
-     */
-    protected $contentType = 'location';
+    public function __construct()
+    {
+        parent::__construct(new QuickReplyType(QuickReplyType::TYPE_LOCATION));
+    }
 }

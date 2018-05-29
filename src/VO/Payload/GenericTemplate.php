@@ -1,6 +1,6 @@
 <?php
 
-namespace Cryonighter\Facebook\Messenger\Send\VO\Payload;
+namespace Cryonighter\Facebook\Messenger\VO\Payload;
 
 class GenericTemplate extends Template
 {

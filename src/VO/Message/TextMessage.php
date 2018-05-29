@@ -1,9 +1,9 @@
 <?php
 
-namespace Cryonighter\Facebook\Messenger\Send\VO\Message;
+namespace Cryonighter\Facebook\Messenger\VO\Message;
 
-use Cryonighter\Facebook\Messenger\Send\VO\Text;
-use Cryonighter\Facebook\Messenger\Send\VO\QuickReply\QuickReply;
+use Cryonighter\Facebook\Messenger\VO\Text;
+use Cryonighter\Facebook\Messenger\VO\QuickReply\QuickReply;
 
 class TextMessage extends Message
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Cryonighter\Facebook\Messenger\Send\VO\Attachment;
+namespace Cryonighter\Facebook\Messenger\VO\Attachment;
 
-use Cryonighter\Facebook\Messenger\Send\VO\Payload\Payload;
-use Cryonighter\Facebook\Messenger\Send\VO\Type\AttachmentType;
+use Cryonighter\Facebook\Messenger\VO\Payload\Payload;
+use Cryonighter\Facebook\Messenger\VO\Type\AttachmentType;
 use JsonSerializable;
 
 class Attachment implements JsonSerializable

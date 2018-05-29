@@ -1,6 +1,6 @@
 <?php
 
-namespace Cryonighter\Facebook\Messenger\Send\VO\Button;
+namespace Cryonighter\Facebook\Messenger\VO\Button;
 
 /**
  * TODO: реализовать https://developers.facebook.com/docs/messenger-platform/reference/buttons/url

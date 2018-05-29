@@ -1,9 +1,9 @@
 <?php
 
-namespace Cryonighter\Facebook\Messenger\Send\VO\Type;
+namespace Cryonighter\Facebook\Messenger\VO\Type;
 
-use Cryonighter\Facebook\Messenger\Send\Exception\ValueException;
-use Cryonighter\Facebook\Messenger\Send\VO\OneValueTrait;
+use Cryonighter\Facebook\Messenger\Exception\ValueException;
+use Cryonighter\Facebook\Messenger\VO\OneValueTrait;
 use JsonSerializable;
 
 abstract class Type implements JsonSerializable
@@ -22,7 +22,7 @@ abstract class Type implements JsonSerializable
      */
     public function __construct(string $value)
     {
-        if (!in_array($value, self::getTypes())) {
+        if (!in_array($value, static::getTypes())) {
             throw new ValueException('Invalid argument value');
         }
 

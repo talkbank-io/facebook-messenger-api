@@ -1,6 +1,6 @@
 <?php
 
-namespace Cryonighter\Facebook\Messenger\Send\Exception;
+namespace Cryonighter\Facebook\Messenger\Exception;
 
 use Exception;
 

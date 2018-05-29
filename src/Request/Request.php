@@ -1,6 +1,6 @@
 <?php
 
-namespace Cryonighter\Facebook\Messenger\Send\Request;
+namespace Cryonighter\Facebook\Messenger\Request;
 
 use JsonSerializable;
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace Cryonighter\Facebook\Messenger\Send\Request;
+namespace Cryonighter\Facebook\Messenger\Request;
 
-use Cryonighter\Facebook\Messenger\Send\VO\Recipient\Recipient;
-use Cryonighter\Facebook\Messenger\Send\VO\SenderAction;
+use Cryonighter\Facebook\Messenger\VO\Recipient\Recipient;
+use Cryonighter\Facebook\Messenger\VO\SenderAction;
 
 class SenderActionRequest extends Request
 {

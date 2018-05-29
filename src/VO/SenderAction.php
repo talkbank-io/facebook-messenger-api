@@ -1,8 +1,8 @@
 <?php
 
-namespace Cryonighter\Facebook\Messenger\Send\VO;
+namespace Cryonighter\Facebook\Messenger\VO;
 
-use Cryonighter\Facebook\Messenger\Send\Exception\ValueException;
+use Cryonighter\Facebook\Messenger\Exception\ValueException;
 use JsonSerializable;
 
 class SenderAction implements JsonSerializable

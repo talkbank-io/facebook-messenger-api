@@ -1,12 +1,12 @@
 <?php
 
-namespace Cryonighter\Facebook\Messenger\Send\Request;
+namespace Cryonighter\Facebook\Messenger\Request;
 
-use Cryonighter\Facebook\Messenger\Send\VO\Message\Message;
-use Cryonighter\Facebook\Messenger\Send\VO\Tag;
-use Cryonighter\Facebook\Messenger\Send\VO\Type\NotificationType;
-use Cryonighter\Facebook\Messenger\Send\VO\Recipient\Recipient;
-use Cryonighter\Facebook\Messenger\Send\VO\MessagingType;
+use Cryonighter\Facebook\Messenger\VO\Message\Message;
+use Cryonighter\Facebook\Messenger\VO\Tag;
+use Cryonighter\Facebook\Messenger\VO\Type\MessagingType;
+use Cryonighter\Facebook\Messenger\VO\Type\NotificationType;
+use Cryonighter\Facebook\Messenger\VO\Recipient\Recipient;
 
 class MessageRequest extends Request
 {

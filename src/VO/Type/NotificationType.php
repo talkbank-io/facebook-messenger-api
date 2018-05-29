@@ -1,8 +1,8 @@
 <?php
 
-namespace Cryonighter\Facebook\Messenger\Send\VO\Type;
+namespace Cryonighter\Facebook\Messenger\VO\Type;
 
-use Cryonighter\Facebook\Messenger\Send\Exception\ValueException;
+use Cryonighter\Facebook\Messenger\Exception\ValueException;
 
 class NotificationType extends Type
 {

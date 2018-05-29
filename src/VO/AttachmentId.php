@@ -1,6 +1,6 @@
 <?php
 
-namespace Cryonighter\Facebook\Messenger\Send\VO;
+namespace Cryonighter\Facebook\Messenger\VO;
 
 use JsonSerializable;
 

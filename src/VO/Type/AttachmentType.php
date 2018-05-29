@@ -1,6 +1,6 @@
 <?php
 
-namespace Cryonighter\Facebook\Messenger\Send\VO\Type;
+namespace Cryonighter\Facebook\Messenger\VO\Type;
 
 class AttachmentType extends Type
 {

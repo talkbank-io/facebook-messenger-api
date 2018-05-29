@@ -1,9 +1,9 @@
 <?php
 
-namespace Cryonighter\Facebook\Messenger\Send\VO\Recipient;
+namespace Cryonighter\Facebook\Messenger\VO\Recipient;
 
-use Cryonighter\Facebook\Messenger\Send\VO\Name;
-use Cryonighter\Facebook\Messenger\Send\VO\PhoneNumber;
+use Cryonighter\Facebook\Messenger\VO\Name;
+use Cryonighter\Facebook\Messenger\VO\PhoneNumber;
 
 class RecipientPhoneNumber extends Recipient
 {

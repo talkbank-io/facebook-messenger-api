@@ -1,14 +1,11 @@
 <?php
 
-namespace Cryonighter\Facebook\Messenger\Send\VO\QuickReply;
+namespace Cryonighter\Facebook\Messenger\VO\QuickReply;
+
+use Cryonighter\Facebook\Messenger\VO\Type\QuickReplyType;
 
 class PhoneQuickReply extends QuickReply
 {
-    /**
-     * @var string
-     */
-    protected $contentType = 'user_phone_number';
-
     /**
      * @var string
      */
@@ -19,6 +16,8 @@ class PhoneQuickReply extends QuickReply
      */
     public function __construct(string $imageUrl = '')
     {
+        parent::__construct(new QuickReplyType(QuickReplyType::TYPE_USER_PHONE));
+
         $this->imageUrl = $imageUrl;
     }
 
