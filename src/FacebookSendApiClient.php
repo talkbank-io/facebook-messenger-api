@@ -113,10 +113,6 @@ class FacebookSendApiClient
     {
         $method = static::METHODS[get_class($request)];
 
-        // TODO: убрать отладочное говно
-        var_dump(json_encode($request, 256 | 128));
-        echo "\n";
-
         try {
             $response = $this->httpClient->post(
                 "/v2.11/me/$method?access_token=$this->pageAccessToken",
@@ -127,10 +123,6 @@ class FacebookSendApiClient
 
             $content = $response->getBody()
                 ->getContents();
-
-            // TODO: убрать отладочное говно
-            var_dump($content);
-            echo "\n";
 
             return json_decode($content, true);
         } catch (ClientException $clientException) {
