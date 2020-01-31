@@ -115,7 +115,7 @@ class FacebookSendApiClient
 
         try {
             $response = $this->httpClient->post(
-                "/v2.11/me/$method?access_token=$this->pageAccessToken",
+                "/v2.12/me/$method?access_token=$this->pageAccessToken",
                 [
                     'json' => $request,
                 ]
